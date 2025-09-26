@@ -1,4 +1,3 @@
-import time
 import os
 from dotenv import load_dotenv
 import re
@@ -34,7 +33,6 @@ def get_transcript(video_id, language):
     try:
         transcript= ytt_api.fetch(video_id, languages=[language])
         full_transcript= " ".join([i.text for i in transcript])
-        time.sleep(10)
         return full_transcript
     except Exception as e:
         print(f"Error fetching video {e}")
