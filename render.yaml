@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vidsynth-ai
+    env: python
+    plan: starter
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python flask_app.py"
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false

@@ -1,0 +1,16 @@
+flask
+flask-cors
+google-generativeai
+youtube-transcript-api==1.2.2
+langchain
+langchain-google-genai
+langchain-chroma
+langchain-community
+python-dotenv
+google-genai
+langchain_experimental
+sentence-transformers
+langchainhub
+requests
+torch
+transformers
